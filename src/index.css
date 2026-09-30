@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-bg-base: #050807;
+  --color-bg-surface: #09120e;
+  --color-bg-elevated: #0f1c16;
+  --color-accent-emerald: #10b981;
+  --color-accent-bright: #34d399;
+  --color-border-subtle: rgba(52, 211, 153, 0.12);
+  --color-border-strong: rgba(52, 211, 153, 0.28);
+}
+
+:root {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  color-scheme: dark;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Syne", sans-serif;
+  font-weight: 550;
+}
+
+/* Refined Editorial Typography Scale */
+.text-hero-display {
+  font-size: clamp(2.25rem, 5.2vw, 4.75rem);
+  line-height: 1.03;
+  letter-spacing: -0.025em;
+  font-weight: 550;
+}
+
+.text-section-heading {
+  font-size: clamp(1.85rem, 3.6vw, 3rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 550;
+}
+
+.text-project-heading {
+  font-size: clamp(1.65rem, 2.8vw, 2.45rem);
+  line-height: 1.16;
+  letter-spacing: -0.015em;
+  font-weight: 550;
+}
+
+.text-service-heading {
+  font-size: clamp(1.25rem, 2vw, 1.85rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.body-prose {
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.7;
+  font-weight: 400;
+  max-width: 56ch;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #050807;
+}
+::-webkit-scrollbar-thumb {
+  background: #13271e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Subtle background radial glow */
+.emerald-radial-glow {
+  background: radial-gradient(circle 500px at 50% 50%, rgba(16, 185, 129, 0.12), transparent 70%);
+}
+
+.emerald-hero-glow {
+  background: radial-gradient(circle 600px at 70% 40%, rgba(16, 185, 129, 0.16), rgba(5, 150, 105, 0.04) 50%, transparent 80%);
+}
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(9, 18, 14, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(52, 211, 153, 0.14);
+}
+
+.glass-panel-subtle {
+  background: rgba(12, 24, 19, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Grain texture overlay */
+.noise-overlay {
+  background-image: radial-gradient(rgba(16, 185, 129, 0.04) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
